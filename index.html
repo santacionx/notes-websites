@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Analysis of algorithms</title>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="stage1.css">
+</head>
+
+<body class="#000000 black">
+	<nav class="#000000 black">
+		<div class="nav-wrapper">
+			<a href="MATH.HTML" data-target="mobile-demo" class="sidenav-trigger">Next</i></a>
+			<a href="#!" class="brand-logo center">Time and Space complexity</a>
+			<ul class="left hide-on-med-and-down">
+				<li><a href="MATH.HTML">mathematics for programming</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h1 style="color: burlywood;"></h1>
+		<div class="row ">
+			<div class="col s12 m6 ">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">Analysis of algorithms</span>
+						<H4> a function f(n) is growing faster(bad algo) than g(n)
+							iff f(n)/g(n)=infinity if vice versa 0
+							</>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">order of growth</span>
+						<H4> direct way to find order of growth-
+							1. ignore lower order terms , and leading const
+						</H4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">lower order terms</span>
+						<H5> c < loglog < logn < LOGN^C < n^C 0<C<1< n < N*LOGN < n2 < 2^n < n^n</p>
+						</H5>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">Which Algorithm is best ?</span>
+						<H4>depends on order of growth
+						</H4>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">when a single function contains multiple cases to find order of growth
+							:</span>
+						<h5> WE FIND BEST,AVG, WORST CASE
+							<h5>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="#263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">Analyze the algorithm : </span>
+						<H5> based on worst case iff multiple case exits
+						</H5>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">lower order terms</span>
+						<H5> c < loglog < logn < n^1/3 < n^1/2 < n < n2 < 2^n < n^n</p>
+						</H5>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">Which Algorithm is best ?</span>
+						<H4>depends on order of growth</H4>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">multiple cases order of growth mathematical notations used are :</span>
+						<H5> big O (upper bound), theta : exact bound (single case) omega : lower bound
+							.
+						</H5>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">BIG O: upperbound: </span>
+						<H5> f(n)=O(g(n)) c,n0 must exist and n>n0
+							f(n)<=c(g(n)) c higher order term : value+1 </h5>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">BIG OMEGA: lower bound:</span>
+						<p> f(n)=omega(g(n)) iff +ve const c, no exist
+
+							0<=c(g(n))<=f(n) c: higher order tern : value -1; covers linear and> linear also covers
+
+								1. f(n)=omega(g(n)) then g(n)=O(f(n))
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="card #263238 blue-grey darken-4">
+					<div class="card-content white-text">
+						<span class="card-title">THETA NOTATION: exact order of growth </span>
+						<p>f(n)=theta(g(n)) iff +ve const c1,c2, no(max) exist
+
+							c1(g(n))<=f(n)<=c2(g(n)) c1: value -1 c2: value -2 f(n)=theta(g(n)) then f(n)=O(g(n)) &
+								f(n)=omega(g(n)) and g(n)=O(f(n)) and g(n)=omega(f(n)) sum,max,min of array theta of n
+								tells us worst best case avg </p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card #00000 black">
+					<div class="card-content white-text">
+						<span class="card-title">RECCURENCE RELATION:</span>
+						<p> USED FOR RECURSIVE CALLS T(N) WRITE RECURRENCE RELATION
+							<BR></BR>
+							EXAMPLE:T(N)=2T(N/2)(rec)+Cn(non rec)
+						<ol>
+							<LI>FIND TOTAL WORK:(non rec) EACH IN LEVELS : HERE CN WORK</LI>
+							<li>FIND TOTAL LEVELS OF TREE: HERE LOG N</li>
+							<LI>CHECK BASE CASE CONTAINS ANY WORK: HERE NO</LI>
+							<LI>SUM UP THE ALL THE ABOVE | HERE THETA(NLOGN)</LI>
+						</ol>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="card #00000 black">
+					<div class="card-content white-text">
+						<span class="card-title">UPEER BOUND REC TREE METHOD </span>
+						<p><BR></BR>
+							aSUUME TREE FULL
+							EXAMPLE:T(N)=T(N/2)+T(N/4)(rec)+Cn(non rec)
+						<ol>
+							<LI>FIND UPPER BOUND</LI>
+							<li>GO TO: RECCURENCE RELATION</li>
+							<LI>HERE : O(N)</LI>
+
+						</ol>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card #00000 black">
+					<div class="card-content white-text">
+						<span class="card-title">Space complexity :</span>
+						<p> order of grow of memory wrt input size
+							<BR></BR>
+							AUXILLARY SPACE/EXTRA SPACE  : TEMP SPACE FOR INPUT SIZE
+						
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div class="card #00000 black">
+					<div class="card-content white-text">
+						<span class="card-title">UPEER BOUND REC TREE METHOD </span>
+						<p><BR></BR>
+							aSUUME TREE FULL
+							EXAMPLE:T(N)=T(N/2)+T(N/4)(rec)+Cn(non rec)
+						<ol>
+							<LI>FIND UPPER BOUND</LI>
+							<li>GO TO: RECCURENCE RELATION</li>
+							<LI>HERE : O(N)</LI>
+
+						</ol>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+
+body{
+    background-image: url(x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: -moz-linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }

@@ -1,0 +1,56 @@
+order of growth 
+    a function f(n) is growing faster(bad algo) than g(n) 
+    iff  f(n)/g(n)=infinity   if vice versa 0
+
+direct way to find order of growth- 
+    1. ignore lower order terms , and leading const
+
+lower order terms
+    c <
+    loglog <
+    logn <
+    n^1/3 <
+    n^1/2 <
+    n <
+    n2 <
+    2^n <
+    n^n
+
+Analysis of Algorithm 
+
+WHY Algorithm is best ?
+    depends on order of growth 
+
+when a single function contains multiple cases  to find order of growth :
+    WE FIND BEST,AVG, WORST CASE 
+
+in general analyze the algorithm : 
+ based on worst case iff multiple case exits 
+
+multiple cases order of growth mathematical notations used are :
+    big O  (upper bound), theta : exact bound (single case)  omega : lower bound  
+
+BIG O: upperbound
+    f(n)=O(g(n)) c,n0 must exist and n>n0
+    f(n)<=c(g(n))  c higher order term : value+1 
+
+BIG OMEGA: lower bound
+    f(n)=omega(g(n)) iff +ve const c, no exist
+    0<=c(g(n))<=f(n) c: higher order tern : value -1;
+    covers linear and  > linear also covers 
+    1. f(n)=omega(g(n)) then g(n)=O(f(n))
+
+THETA NOTATION:  exact order of growth
+     f(n)=theta(g(n)) iff +ve const c1,c2, no(max) exist
+    c1(g(n))<=f(n)<=c2(g(n)) c1: value -1 c2: value -2
+
+    f(n)=theta(g(n)) then  f(n)=O(g(n)) & f(n)=omega(g(n)) and  g(n)=O(f(n))  and g(n)=omega(f(n))
+
+    sum,max,min of array theta of n
+    tells us worst best  case avg 
+
+
+
+
+
+
